@@ -77,7 +77,7 @@
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
-                    <input name="cpf" type="text" id="cpf" class="campo__escrita campo__escrita--menor" minlength="11" maxlength="14" required />
+                    <input name="cpf" type="text" id="cpf" class="campo__escrita campo__escrita--menor" minlength="11" maxlength="14" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
