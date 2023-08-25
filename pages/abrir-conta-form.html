@@ -61,13 +61,13 @@
             <form class="principal__formulario" data-formulario>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="nome">Nome</label>
-                    <input name="nome" type="text" id="nome" class="campo__escrita" />
+                    <input name="nome" type="text" id="nome" class="campo__escrita" minlength="3"/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
 
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="email">E-mail</label>
-                    <input name="email" type="email" id="email" class="campo__escrita" />
+                    <input name="email" type="email" id="email" class="campo__escrita" minlength="4"/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
@@ -77,7 +77,7 @@
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
-                    <input name="cpf" type="text" id="cpf" class="campo__escrita campo__escrita--menor" required />
+                    <input name="cpf" type="text" id="cpf" class="campo__escrita campo__escrita--menor" minlength="11" maxlength="14" required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
