@@ -7,7 +7,26 @@
 
 ## Tecnologias utilizadas durante o curso
 * JavaScript
-
-## Tecnologias utilizadas no projeto
 * HTML
 * CSS
+
+
+
+-> No projeto deste curso, seremos uma dupla de pessoas desenvolvedoras que recebeu a tarefa de implementar validações nos campos do formulário de cadastro do **Monibank**
+<hr>  
+
+
+Durante o curso você vai lidar com 
+- Required
+- Type
+- min e max-length
+- Pattern e regex
+- addEventListener
+- Verificação do CPF
+- verificação de idade
+- Validity State
+- Manipular o DOM
+- localStorage
+- JavaScript assíncrono
+<hr>
+  
