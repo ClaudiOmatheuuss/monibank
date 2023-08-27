@@ -1,6 +1,22 @@
 import ehUmCPF from "./valida-cpf.js"
 import ehMaiorDeIdade from "./valida-idade.js"
 const camposDoFormulario = document.querySelectorAll('[required]')//seleciona todos elementos com o atributo required
+const formulario = document.querySelector('[data-formulario]') //seleciona formulario
+
+formulario.addEventListener("submit" , (e) => { //ao ser enviado executa
+    e.preventDefault()
+
+    const listaRespostas = { //objeto que recebe as respostas do campo
+        nome: e.target.elements["nome"].value ,
+        email: e.target.elements["email"].value, 
+        rg : e.target.elements["rg"].value ,
+        cpf: e.target.elements["cpf"].value, 
+        aniversario: e.target.elements["aniversario"].value, 
+    }
+    localStorage.setItem("cadastro" , JSON.stringify(listaRespostas)) //atribui item do objeto listaRespostas convertido em um json composto por strings para o localStorage
+
+    window.location.href = './abrir-conta-form-2.html' //redireciona para prox sessão do cadastro
+})
 
 camposDoFormulario.forEach((campo) => {
     campo.addEventListener("blur", () => verificaCampo(campo))//quando o campo é desfocado a função verificaCampo é chamado com o campo como parametro
