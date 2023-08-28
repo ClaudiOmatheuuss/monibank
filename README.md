@@ -16,7 +16,7 @@
 <hr>  
 
 
-Durante o curso você vai lidar com 
+Conhecimento adquirido durante o curso:
 - Required
 - Type
 - min e max-length
