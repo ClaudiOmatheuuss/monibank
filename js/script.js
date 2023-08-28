@@ -13,7 +13,7 @@ formulario.addEventListener("submit" , (e) => { //ao ser enviado executa
         cpf: e.target.elements["cpf"].value, 
         aniversario: e.target.elements["aniversario"].value, 
     }
-    localStorage.setItem("cadastro" , JSON.stringify(listaRespostas)) //atribui item do objeto listaRespostas convertido em um json composto por strings para o localStorage
+    localStorage.setItem("cadastro" , JSON.stringify(listaRespostas)) //atribui item do objeto JSON listaRespostas convertido em string para o localStorage
 
     window.location.href = './abrir-conta-form-2.html' //redireciona para prox sessão do cadastro
 })
